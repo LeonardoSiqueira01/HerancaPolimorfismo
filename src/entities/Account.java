@@ -37,8 +37,9 @@ public Double getBalance() {
 
 
 public void withdraw(Double amount) {
-	balance = balance - amount;
+	balance = balance - amount - 5.0;
 }
+
 public void deposit(Double amount) {
 	balance = balance + amount;
 }

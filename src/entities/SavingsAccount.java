@@ -1,6 +1,6 @@
 package entities;
 
-public class SavingsAccount extends Account {
+public class SavingsAccount extends Account { //conta poupança
 	private Double interestRate; //taxa de juros
 	
 	public SavingsAccount() {
@@ -24,5 +24,9 @@ public class SavingsAccount extends Account {
 		balance = balance + balance *interestRate;
 	}
 	
+	@Override
+	public void withdraw(Double amount) {
+		balance -= amount;
+	}
 	
 }
